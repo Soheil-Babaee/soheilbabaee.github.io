@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body{
+  background-color: rgb(203, 211, 212);
+}
+@font-face {
+    font-family: "vazir";
+    src: url(../Fonts/Vazir.eot),
+    url(../Fonts/Vazir.ttf),
+    url(../Fonts/Vazir.woff),
+    url(../Fonts/Vazir.woff2);
+  }
+  
+  @font-face {
+    font-family: "shabnam";
+    src: url(../Fonts/Shabnam-Bold.eot),
+    url(../Fonts/Shabnam-Bold.ttf),
+    url(../Fonts/Shabnam-Bold.woff),
+    url(../Fonts/Shabnam-Bold.woff2);
+  }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Normalize.css */
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'); */
+
+/* menu bar */
+.mobile_nav{
+  display: none;
+}
+header{
+  width: 100%;
+  height: auto;     
+  background-color: #1e3a8a;
+}
+header nav ul{
+  direction: rtl; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+header nav ul li{
+  padding: 1.5% 1.5% 1.5% 1.5%;
+  font-size: 1.2em;
+  font-family: "vazir";
+  display: inline-block;
+  transition: 0.3s;
+}
+header nav ul li a{
+  position: relative;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+header nav ul li p{
+  color: white;
+}
+.btn_download{
+     width: fit-content;
+    padding: 0.8% 0.8% 0.8% 0.8% ;
+    background-color: #3b82f6 ;
+    border: 1px solid  #3b82f6;
+    border-radius: 5px;
+    color: white;
+    font-family: "shabnam";
+    text-decoration: none;
+    transition: 0.3s;
+}
+.btn_download:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+header nav ul li a::after{
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #3b82f6;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  
+  }
+  header nav ul li a:hover::after{
+  width: 100%;
+  }
+  header nav ul li a::after{
+  left: 50%;
+  transform: translateX(-50%);
+  }
+  /*menu bar  */
+
+  /* div_Introduction */
+  .div_Introduction{
+    background-color: #1e3a8a;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+    text-align: center;
+    padding: 1% 1% 1% 1%;
+
+  }
+  .div_Introduction img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #95A5A6;
+    user-select: none;
+  }
+  .div_Introduction h2{
+    color: white;
+    font-family: "shabnam";
+    margin-top: 1%;
+  }
+  .div_Introduction h2 span{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .div_Introduction h5{
+    color: white;
+    font-family: "shabnam";
+    margin-top: 1%;
+  }
+  .div_h5{
+    background-color: #da6c1e;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+    border-radius: 5px;
+  }
+  /* div_Introduction */
+
+  /* div for content */
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2%;
+  }
+  .card_cv{
+    background-color: #1e3a8a;
+    margin-bottom: 1%;
+    width: 30% !important;
+    flex: 1 1 calc(33.333% - 20px);
+
+  }
+  .card-title{
+    color: rgb(209, 209, 209) !important;
+    font-family: "shabnam";
+  }
+  .card-text{
+    color: rgb(209, 209, 209) !important;
+    font-family: "vazir";
+    text-align: justify;
+  }
+  .btn_Continuation{
+    font-family: "shabnam";
+
+    border-radius: 0px 0px 5px 5px !important;
+    background-color: #3b82f6 ;
+    border: 1px solid #3b82f6;
+    transition: 0.3s !important;
+  }
+  .btn_Continuation:hover{
+    background-color: #2b67aa ;
+    transition: 0.3s !important;
+    border: 1px solid #2b67aa;
+
+  }
+
+  .Work_samples{
+    background-color: #1e3a8a;
+    margin-bottom: 1%;
+    width: 30% !important;
+    flex: 1 1 calc(33.333% - 20px);
+
+  }
+  .card_skills{
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #1e3a8a;
+    margin-bottom: 1%;
+    width: 30% !important;
+  }
+  /* div for content */
+
+
+  .div_social_media{
+    background-color: #1e3a8a;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wrapper {
+    display: inline-flex;
+    list-style: none;   
+}
+
+.wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    width: max-content;
+    top: 0;
+    font-size: 0.8rem;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    font-family: "shabnam";
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+    background: #3b5998;
+    color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    background: #1da1f2;
+    color: #fff;
+}
+
+.wrapper .instagram:hover {
+  background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+    color: #fff;
+}
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before{
+  background-color: #8134AF;
+    color: #fff;
+}
+
+.wrapper .telegram:hover,
+.wrapper .telegram:hover .tooltip,
+.wrapper .telegram:hover .tooltip::before {
+    background: #0088CC;
+    color: #fff;
+}
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+    background:  #181717;
+    color: #fff;
+}
+.iframe_map{
+  width: 350px;
+  height: 300px;
+  margin-top: 1%;
+  border-radius: 20px;
+}
+.h5_email{
+  color: rgb(192, 192, 192);
+  font-family: "shabnam";
+}
+.h5_email span a{
+  color: rgb(192, 192, 192);
+}
+.h5_phone{
+  color: rgb(192, 192, 192);
+  font-family: "shabnam";
+}
+.h5_phone span a{
+  color: rgb(192, 192, 192);
+}
+.col_info{
+  text-align: center;
+}
+.h6_address{
+  color: rgb(192, 192, 192);
+  font-family: "shabnam";
+}
+.h6_address span a{
+  color: rgb(192, 192, 192);
+}
+.h3_social_media{
+  color: rgb(192, 192, 192);
+  font-family: "shabnam";
+  padding: 5% 5% 10% 5%;
+}
+  @media (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+@media screen and (max-width: 576px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+@media screen and (max-width:795px) {
+  header nav ul li a{
+    font-size: 0.9rem ;
+  }
+  
+}
+@media screen and (max-width:585px) {
+  header{
+    display: none;
+  }
+  .mobile_nav{
+    display: block;
+    position: static !important;
+    margin-right: 3%;
+  }
+  .body_canvas{
+    background-color: #1e3a8a !important;
+  }
+  .ul_canvas{
+    text-align: center;
+  }
+  .nav-link{
+    color: white !important;
+    font-family: "vazir" !important;
+    font-size: 1.4rem;
+  }
+  .btn_download{
+    width: 95%;
+    margin-top: 10%;
+  }
+  .col_info{
+    margin-top: 5%;
+  }
+  .card{
+    width: fit-content;
+    flex: 1 1 100%;
+  }
+  .div_Introduction img{
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width:485px) {
+  .wrapper .icon{
+    width: 20px;
+    height: 20px;
+  }
+  .iframe_map{
+    width: 150px;
+    height: 150px;
+  }
+  .div_Introduction img{
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width:370px) {
+  .wrapper .icon{
+    width: 10px;
+    height: 10px;
+    margin-right: 3%;
+  }
+  .div_Introduction h2{
+    font-size: 1.1rem;
+  }
+}
